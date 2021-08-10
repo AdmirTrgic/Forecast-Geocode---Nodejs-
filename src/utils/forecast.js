@@ -16,7 +16,11 @@ const forecast = (latitude, longitude, callback) => {
 		} else {
 			callback(
 				undefined,
-				`Name: ${body.location.name}, Temperature: ${body.current.temperature}, Feelslike: ${body.current.feelslike}, WindSpeed: ${body.current.windspeed}, Local time: ${body.location.localtime}`
+				`Name: ${body.location.name}, 
+				Temperature: ${body.current.temperature}, 
+				Feelslike: ${body.current.feelslike}, 
+				WindSpeed: ${body.current.windspeed}, 
+				Local time: ${body.location.localtime}`
 			);
 		}
 	});
